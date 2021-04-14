@@ -3,7 +3,7 @@ import Head from 'next/head'
 export const Home = (): JSX.Element => (
   <div>
     <Head>
-      <title>Create Next App</title>
+      <title>Create Next App with Amagi:DDmxh</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
