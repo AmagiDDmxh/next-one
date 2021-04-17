@@ -1,6 +1,6 @@
 {
   "name": "with-typescript-eslint-jest",
-  "author": "@erikdstock",
+  "author": "@amagiddmxh",
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
@@ -26,6 +26,8 @@
     ]
   },
   "dependencies": {
+    "@headlessui/react": "^1.0.0",
+    "@heroicons/react": "^1.0.1",
     "next": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

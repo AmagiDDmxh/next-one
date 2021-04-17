@@ -14,3 +14,10 @@ Bootstrap a developer-friendly NextJS app configured with:
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/AmagiDDmxh/next-one&project-name=with-amagi-one&repository-name=with-amagi-one)
+
+## Refernce
+
+Thanks for people in these projects, for helps to create this project.
+
+- https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest
+- https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
