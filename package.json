@@ -11,7 +11,11 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "yarn lint && yarn type-check && yarn test"
+    "test-all": "yarn lint && yarn type-check && yarn test",
+    "i18n:extract": "formatjs extract '{pages,components,fixtures}/**/*.tsx' --out-file locales/raws/en_US.json --id-interpolation-pattern [sha512:contenthash:base64:6] --format lokalise",
+    "i18n:compile:en-US": "formatjs compile locales/raws/en_US.json --ast --out-file locales/en-US.json --format lokalise",
+    "i18n:compile:zh-CN": "formatjs compile locales/raws/zh_CN.json --ast --out-file locales/zh-CN.json --format lokalise",
+    "i18n:compile": "npm run i18n:compile:en-US && npm run i18n:compile:zh-CN"
   },
   "husky": {
     "hooks": {
@@ -31,9 +35,11 @@
     "classnames": "^2.3.1",
     "next": "latest",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-intl": "^5.20.1"
   },
   "devDependencies": {
+    "@formatjs/cli": "^4.2.19",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25",
