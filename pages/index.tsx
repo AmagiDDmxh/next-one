@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { FormattedMessage } from 'react-intl'
 
 export const Home = (): JSX.Element => (
   <div>
@@ -10,10 +11,13 @@ export const Home = (): JSX.Element => (
     <div className="grid grid-cols-1 sm:grid-cols-2 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16">
       <div className="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-black sm:bg-none">
         <p className="text-sm font-medium text-white sm:mb-1 sm:text-gray-500">
-          Entire house
+          <FormattedMessage id="home__title" defaultMessage="房子全景" />
         </p>
         <h2 className="text-xl font-semibold text-white sm:text-2xl sm:leading-7 sm:text-black md:text-3xl">
-          Beach House in Collingwood
+          <FormattedMessage
+            id="home__subtitle"
+            defaultMessage="在 Collingwood 的海边房"
+          />
         </h2>
       </div>
       <div className="col-start-1 row-start-2 px-4 sm:pb-16">
