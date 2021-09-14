@@ -13,7 +13,7 @@ Bootstrap a developer-friendly NextJS app configured with:
 ## Use `create-next-app` to start locally
 
 ```bash
-yarn create next-app --example-path https://github.com/AmagiDDmxh/next-one next-one-app
+yarn create next-app --e https://github.com/AmagiDDmxh/next-one next-one-app
 ```
 
 
