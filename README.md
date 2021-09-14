@@ -10,6 +10,13 @@ Bootstrap a developer-friendly NextJS app configured with:
 - Preconfigured green theme with [TailwindCSS](https://tailwindcss.com/) and its [Just-in-Time Mode](https://tailwindcss.com/docs/just-in-time-mode)
 - I18n using @[formatjs](https://formatjs.io/) and its `react-intl`
 
+## Use `create-next-app` to start locally
+
+```bash
+❯ yarn create next-app --example-path https://github.com/AmagiDDmxh/next-one next-one-app
+```
+
+
 ## Deploy your own
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
