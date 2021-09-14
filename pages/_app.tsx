@@ -1,12 +1,12 @@
 import { AppProps } from 'next/app'
-import { useRouter } from 'next/router'
 import { IntlProvider } from 'react-intl'
 
 import locales from '@locales'
+import { useTypeSafeRouter } from '@libs/hooks/useTypeSafeRouter'
 import '../styles/global.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const { locale = 'zh-CN', defaultLocale } = useRouter()
+  const { locale = 'zh-CN', defaultLocale } = useTypeSafeRouter()
   const messages = locales[locale]
 
   return (
