@@ -12,7 +12,9 @@
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
     "test-all": "yarn lint && yarn type-check && yarn test",
-    "i18n:extract": "formatjs extract '{pages,components,fixtures}/**/*.tsx' --out-file locales/raws/en_US.json --id-interpolation-pattern [sha512:contenthash:base64:6] --format lokalise"
+    "i18n:extract": "formatjs extract '{pages,components,fixtures}/**/*.tsx' --out-file locales/raws/en_US.json --id-interpolation-pattern [sha512:contenthash:base64:6] --format lokalise",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -36,7 +38,12 @@
     "react-intl": "^5.20.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "@formatjs/cli": "^4.2.19",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25",
@@ -45,6 +52,7 @@
     "@typescript-eslint/parser": "^4.14.2",
     "autoprefixer": "^10.2.5",
     "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.19.0",
