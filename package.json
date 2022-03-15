@@ -25,7 +25,8 @@
   "lint-staged": {
     "*.@(ts|tsx)": [
       "yarn lint",
-      "yarn format"
+      "yarn format",
+      "git add"
     ]
   },
   "dependencies": {
