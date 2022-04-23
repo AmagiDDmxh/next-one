@@ -5,13 +5,11 @@ Bootstrap a developer-friendly NextJS app configured with:
 - [Typescript](https://www.typescriptlang.org/)
 - Preconfigured green theme with [TailwindCSS](https://tailwindcss.com/) and its [Just-in-Time Mode](https://tailwindcss.com/docs/just-in-time-mode)
 
-
 ## Use `create-next-app` to start your journey
 
 ```bash
 yarn create next-app -e https://github.com/AmagiDDmxh/next-one next-one-app
 ```
-
 
 ## Deploy your own
 

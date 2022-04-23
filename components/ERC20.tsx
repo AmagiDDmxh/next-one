@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useAccount } from 'wagmi'
 import Allowance from './Allowance'
 
 // Panda addr 0x3cBb7f5d7499Af626026E96a2f05df806F2200DC
@@ -9,9 +8,6 @@ const ERC20 = () => {
     '0x3cBb7f5d7499Af626026E96a2f05df806F2200DC'
   )
   const [submittedTokenAddress, setSubmittedTokenAddress] = useState<string>()
-
-  const [{ data: accountData }] = useAccount()
-  const address = accountData?.address
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     const { value } = e.target
@@ -33,7 +29,6 @@ const ERC20 = () => {
       </form>
 
       <Allowance
-        address={address}
         tokenAddress={submittedTokenAddress}
         spender={'0xC36442b4a4522E871399CD717aBDD847Ab11FE88'}
       />
